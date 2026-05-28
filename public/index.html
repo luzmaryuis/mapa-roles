@@ -188,7 +188,7 @@ const REFLECTION = {
   facilitador: "¿Qué energía o estructura necesita este grupo ahora mismo?",
   empate:      "¿Qué rol estamos evitando y por qué?",
 };
-const isFacilitator = window.location.pathname === "/facilitador";
+ const isFacilitator = window.location.pathname.includes("facilitador");
 let myName = null, myRole = null, timerInterval = null;
 const FAC_KEY = new URLSearchParams(window.location.search).get("key") || "";
 const socket = io();
